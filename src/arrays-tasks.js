@@ -136,10 +136,8 @@ function getAverage(arr) {
   if (arr.length === 0) {
     return 0;
   }
-  const initialValue = 0;
   const sum = arr.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    initialValue
+    (accumulator, currentValue) => accumulator + currentValue
   );
   const average = sum / arr.length;
   return Number.isInteger(average) ? average : Number(average.toFixed(2));
